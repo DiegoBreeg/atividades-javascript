@@ -12,3 +12,5 @@ function descobre_tipo_triangulo(a, b, c){
 }
 
 descobre_tipo_triangulo(3, 3, 3)
+descobre_tipo_triangulo(1, 3, 3)
+descobre_tipo_triangulo(1, 2, 3)
