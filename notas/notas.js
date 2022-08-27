@@ -11,11 +11,8 @@ function resultado(nota) {
                 return `nota: ${nota}, reprovado\n${'-'.repeat(40)}`
     }
 
-console.log(resultado(26))
-console.log(resultado(27))
-console.log(resultado(28))
+console.log(resultado(84))
+console.log(resultado(29))
 console.log(resultado(37))
 console.log(resultado(38))
-console.log(resultado(50))
-console.log(resultado(52))
-console.log(resultado(53))
+
