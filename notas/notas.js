@@ -3,10 +3,19 @@ function resultado(nota) {
         console.log('nota', nota)
         console.log('proximo multiplo de 5', p_multiplo)
         console.log('diferença entre a nota e o p_multiplo', p_multiplo - nota)
-        if(p_multiplo - nota < 3) 
-            return p_multiplo < 40? `nota: ${p_multiplo} reprovado`: `nota: ${p_multiplo} aprovado`
-         else
-            return nota < 40? `nota: ${nota} reprovado`: `nota: ${nota} aprovado`        
+        if(nota > 37) {
+            return p_multiplo - nota < 3
+                ?`nota: ${p_multiplo}, aprovado\n${'-'.repeat(40)}`
+                :`nota: ${nota}, aprovado\n${'-'.repeat(40)}`
+            } else
+                return `nota: ${nota}, reprovado\n${'-'.repeat(40)}`
     }
 
-console.log(resultado(33))
+console.log(resultado(26))
+console.log(resultado(27))
+console.log(resultado(28))
+console.log(resultado(37))
+console.log(resultado(38))
+console.log(resultado(50))
+console.log(resultado(52))
+console.log(resultado(53))
